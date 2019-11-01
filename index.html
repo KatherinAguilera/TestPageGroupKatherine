@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Title -->
+  <title>Cheviplan</title>
+</head>
+<body>
+  <main>
+    <img src="assets/car.jpeg" alt="cheviplan">
+    <section class="data">
+      <div class="info">
+        <h1>Plan Prográmate</h1>
+        <h2>Ahora tú planeas cúando serás adjudicado para tu nuevo <br>vehículo Chevrolet.</h2>
+      </div>
+      <div class="form-container" id="form">
+        <h3>¿Que esperas para cumplir tu sueño?</h3>
+        <p class="form_p">Deja tus datos y nos comunicaremos contigo.</p>
+        <form action="" class="form" >
+          <input class="block" id="name" type="text" required placeholder="Nombre Completo" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+            title="El formato debe coincidir con solo letras .">
+          <select name="select" required>
+            <option selected="true" disabled="disabled">Tipo de documento</option>
+            <option value="value1">CC</option>
+            <option value="value2" >CE</option>
+            <option value="value3">PA</option>
+          </select>
+          <input id="" type="text" required placeholder="Numero de documento" pattern="[0-9]{6,10}"
+            title="Solo numeros minimo 6 maximo 10">
+          <select name="pais" id="check" required>
+            <option selected="true" disabled="disabled">País</option>
+          </select>
+          <input id="thelephone" type="tel" required placeholder="Celular" pattern="[0-9]{10}"
+            title="El formato debe coincidir con 10 numeros .">
+          <input class="block" type="email"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required
+            placeholder="Correo Electrónico">
+          <label class="block">
+          <input type="checkbox"  required value="first_checkbox">Leí y acepto condiciones de la <span class="check-span">política de
+            privacidad</span>
+          </label>
+          <button class="button block">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/index.js"></script>
+  </body>
+</html>
